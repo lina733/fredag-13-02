@@ -1,0 +1,171 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 50px;
+    background-color: #E7D7C4;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+h3 {
+    width: 600px;
+    height: auto;
+    margin: 20px 0;
+}
+
+hr {
+    width: 110%;
+    height: 10px;
+    background-color: black;
+    border: none;
+    margin: 60px 0;
+}
+
+/* menu bar */
+nav {
+    background-color: black;
+    padding: 15px 0;
+    text-align: center;
+    width: 110%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #D4AF37;
+}
+
+
+img {
+    width: 800px;
+    height: auto;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* indhold */
+.content-section {
+    background-color: #2E1503;
+    width: 110%;
+    padding: 100px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.background-monogram {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    object-fit: cover;
+    opacity: 0.1;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* kampagne layout  */
+.campaign-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.campaign-image {
+    width: 600px;
+    flex-shrink: 0;
+    background-color: #EFE4D6;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.campaign-description {
+    max-width: 1000px;
+    color: #EFE4D6;
+    text-align: left;
+}
+
+.campaign-description h2 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.campaign-description p {
+    font-size: 30px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-transform: none;
+    color: #EFE4D6;
+}
+
+/* koder til DIVIDERS & LINKS */
+.divider {
+    width: 100px;
+    height: 2px;
+    background-color: #D4AF37;
+    margin: 20px 0 30px 0;
+}
+
+.campaign-link {
+    font-size: 45px;
+    margin-top: 30px;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    z-index: 2;
+    position: relative;
+}
+
+.campaign-link:hover {
+    color: #D4AF37;
+    cursor: pointer;
+}
+
+.discover-link {
+    display: inline-block;
+    color: #D4AF37;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    border-bottom: 2px solid #D4AF37;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+}
+
+.discover-link:hover {
+    color: white;
+    border-color: white;
+}
